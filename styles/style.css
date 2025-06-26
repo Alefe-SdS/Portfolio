@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300..700&display=swap');
+
+:root{ /*definir propriedades específicas na pseudoclasse :root, para que ela possa ser aplicada globalmente em seu documento HTML:*/
+    --cor-primaria: #16423C;
+    --cor-secundaria: #E9EFEC;
+    --cor-terciaria: #12f1ff;
+    --cor-hover: #798983;
+
+    --fonte-primaria:"Teko", serif;
+    --fonte-secundaria:"Rajdhani", serif;
+
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+
+    /* height: 100vh;  */
+    box-sizing: border-box;/*responsável por como a largura e a altura totais de um elemento são calculadas*/
+    /*background-color: var(--cor-primaria);*/
+    color: var(--cor-secundaria);
+    background-image: url(../assets/backgroudimg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  
+   
+       
+    
+}
+
+.cabecalho{
+    padding: 3% 0 0 70% ;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 65px;
+}
+
+
+.cabecalho__menu__link{
+    
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600px;
+    color: var(--cor-secundaria);
+    border: 0.1px solid var(--cor-terciaria); 
+    padding: 1px 20px; 
+    border-radius: 6px;
+    text-decoration: none;
+
+}
+.cabecalho__menu__link:hover{
+    background-color: var(--cor-hover)
+
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria)
+}
+
+.apresentacao{
+    /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/ <- Flexbox é uma ferramenta do CSS que visa organizar os elementos de uma página HTML de forma dinâmica e mantendo um layout flexível*/ 
+
+    margin: -2% 11%;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;/*justify-content, comando responsável por justificar, formatando o posicionamento de acordo com o requisito do desenvolvedor.*/
+   
+   
+}
+.imgAlefe{
+    width: 50%;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+
+.imgAlefe2{
+    width: 50%;
+    position: relative;
+    top: -150px;
+    left: 100px;
+}
+
+.apresentacao__conteudo {
+  
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.6rem;
+    font-family: var(--fonte-primaria);
+       
+
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.1rem;
+    font-family: var(--fonte-secundaria);
+    
+    
+    
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.apresentacao__links_subtitulos{
+    font-family: var(--fonte-primaria);
+    font-size: 1.8rem;
+
+}
+
+.apresentacao__links__link{
+    /* background-color:#22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--cor-terciaria);
+    width: 300px;
+    padding: 15px 30px ;
+    text-align: center;         
+    border-radius: 10px; /*Arredondar bordas com border-radius.    */
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none; /*Retirar o sublinhado do link com o text-decoration;*/
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    
+}
+
+.apresentacao__links__link:hover{ /*Selecione e estilize um link ao passar o mouse sobre ele:*/
+    background-color: var(--cor-hover);
+    
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.18rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-weight: 100%;
+    margin-top: 88px;
+    
+    
+}
+
+.rodape2{
+    
+    background-color: var(--cor-terciaria);
+    padding: 12px;
+    width: 100%;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-size: 2.18rem;
+    text-align: center;
+ 
+}
+
+/*tag para deixar o site responsivo no celular*/
+@media screen and (max-width: 1200px) {
+
+    body{
+
+        /* height: 100vh;  */
+        box-sizing: border-box;/*responsável por como a largura e a altura totais de um elemento são calculadas*/
+        /*background-color: var(--cor-primaria);*/
+        color: var(--cor-secundaria);
+        background-image: url(../assets/backgroudcell2.png);
+        background-repeat:no-repeat;    
+        background-size: cover; 
+        background-position: center;
+        
+        
+    }
+
+    /*cabeçalho*/
+    .cabecalho{
+        padding: 7% 0 0 5% ;
+    
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    /*classe gerais*/ 
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+       
+    }
+
+            /*titulo*/
+    .apresentacao__conteudo {
+              width: auto;     
+            
+    }
+    .apresentacao__conteudo__titulo{
+        font-size: 40px;        
+        font-family: var(--fonte-primaria);
+           
+     }
+     .apresentacao__conteudo__paragrafo{
+        font-size: 27px;
+        font-family: var(--fonte-secundaria);            
+    }
+
+    .apresentacao__links__link{
+        /* background-color:#22D4FD; */
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid var(--cor-terciaria);
+        width: 270px;
+        padding: 15px 20px ;
+        text-align: center;         
+        border-radius: 10px; /*Arredondar bordas com border-radius.    */
+        font-size: 28px;
+        font-weight: 500px;
+        text-decoration: none; /*Retirar o sublinhado do link com o text-decoration;*/
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-primaria);
+        
+    }
+
+    .imgAlefe{
+        width: 100%;
+    }
+
+    
+    .rodape{
+    background-color: var(--cor-terciaria);
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-weight: 100px; 
+
+    }
+
+   
+    
+}
+
