@@ -18,7 +18,7 @@ O site é **totalmente responsivo**, com uma versão de layout adaptada para dis
 ## 🔗 Acesse o Portfólio
 
 Você pode ver o projeto em funcionamento clicando aqui:  
-➡️ [Link: https://alefe-sds.github.io/portfolio/](https://alefe-sds.github.io/portfolio)
+➡️ [Link: https://alefe-sds.github.io/Portfolio/](https://alefe-sds.github.io/Portfolio/)
 
 ## 📂 Estrutura de Pastas
 ```bash
